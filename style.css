@@ -2,10 +2,6 @@
     box-sizing: border-box;
 }
 
-html {
-    background-color: transparent;
-}
-
 :root {
     --wood: rgba(71, 61, 47, 0.7);     
     --dark-wood: rgb(36, 30, 23);
@@ -36,9 +32,10 @@ body {
         rgba(0, 0, 0, 0.55),
         rgba(0, 0, 0, 0.55)
     ), url(https://images.unsplash.com/photo-1505075106905-fb052892c116?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
+    background-position: center center;
+    background-repeat: no-repeat;    
+    background-attachment: fixed;    
     background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
 }
 
 .form-container {
