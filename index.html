@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/br.ico" type="image/x-icon">
+    <title>New Beer flavor</title>
+</head>
+<body>
+    <header id="main-title">
+        <div class="container">
+            <h1 id="title" tabindex="0">
+                New beer flavor survey
+            </h1>
+            <p id="description">
+                Thank you for help us choose a new flavor for our summer beer
+            </p>
+        </div>
+    </header>
+    <div class="form-container">
+        <form action="" id="survey-form">
+            <div class="input-container" id="name-container">
+                <label for="name" id="name-label">Name</label>
+                <br>
+                <input type="text" name="name" id="name" placeholder="Enter your name" required>
+            </div>
+            <div class="input-container">
+                <label for="email" id="email-label">Email</label>
+                <br>
+                <input type="email" name="email" id="email" placeholder="Enter your email" required>
+            </div>
+            <div class="input-container">
+                <label for="number" id="number-label">Age</label>
+                <br>
+                <input type="number" name="age" id="number" placeholder="Enter your age" min="18" max="120" required>
+            </div>
+            <div class="input-container" id="dropdown-container">
+                <label for="dropdown" id="dropdown">Which of our current flavors do you like more?</label>
+                <br>
+                <select name="dropwown" id="dropdown" required>
+                    <option disabled selected value>Select a flavor</option>
+                    <option value="pilsner">Pilsner</option>
+                    <option value="dunkel">Dunkel</option>
+                    <option value="schwarzbier">Schwarzbier</option>
+                    <option value="rauch">Rauch</option>
+                </select>
+            </div>
+            <div class="input-container" id="taste-container">
+                <label for="" id="beer-flavor">What taste would you prefer a beer to have?</label>
+                <br>
+                <input type="radio" name="beer-flavor" id="bitter-flavor" value="bitter-flavor" required>
+                <label for="bitter-flavor">Bitter taste</label>
+                <br>
+                <input type="radio" name="beer-flavor" id="fruity-flavor" value="fruity-flavor">
+                <label for="fruity-flavor">Fruity flavor</label>
+                <br>
+                <input type="radio" name="beer-flavor" id="woody-flavor" value="woody-flavor">
+                <label for="woody-flavor">Woody flavor</label>
+                <br>
+                <input type="radio" name="beer-flavor" id="malty-flavor" value="malty-flavor">
+                <label for="malty-flavor">Malty flavor</label>
+            </div>
+            <div class="input-container" id="alcohol-container">
+                <label for="" id="alcohol-content-label">What alcohol content would you prefer a beer to have?</label>
+                <br>
+                <input type="radio" name="alcohol-content" id="less-3" value="less-3" required>
+                <label for="less-3">Less than 3 percent</label>
+                <br>
+                <input type="radio" name="alcohol-content" id="bet-3-and-7" value="bet-3-and-7">
+                <label for="bet-3-and-7">Between 3 percent and 7 percent</label>
+                <br>
+                <input type="radio" name="alcohol-content" id="bet-7-and-10" value="bet-7-and-10">
+                <label for="bet-7-and-10">Between 7 percent and 10 percent</label>
+            </div>
+            <div class="input-container" id="packaging-container">
+                <label for="" id="beer-packaging">What types of beer packaging do you like mores?</label>
+                <br>
+                <input type="checkbox" name="beer-packaging" id="glass-bottles" value="glass-bottles">
+                <label for="beer-packaging">Glass bottles</label>
+                <br>
+                <input type="checkbox" name="beer-packaging" id="small-glass-bottles" value="small-glass-bottles">
+                <label for="small-glass-bottles">Small glass bottles</label>
+                <br>
+                <input type="checkbox" name="beer-packaging" id="pet-bottles" value="pet-bottles">
+                <label for="pet-bottles">PET bottles</label>
+                <br>
+                <input type="checkbox" name="beer-packaging" id="small-cans" value="small-cans">
+                <label for="small-cans">Small cans</label>
+                <br>
+                <input type="checkbox" name="beer-packaging" id="large-cans" value="large-cans">
+                <label for="large-cans">Large cans</label>
+            </div>
+            <div class="input-container" id="comments-container">
+                <label for="" id="comments">Please let us know any comments o suggestions you may for our new beer flavor</label>
+                <br>
+                <textarea name="comments" id="comments"
+                    placeholder="Enter your comments or suggestions here..."></textarea>
+            </div>
+            <div class="input-container" id="submit-container">
+                <button type="submit" id="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+<!--
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+--> 
+</html>
