@@ -8,17 +8,6 @@
     --light-wood: rgb(138, 117, 88);
 }
 
-html {
-    background-image: linear-gradient(
-        0deg,
-        rgba(0, 0, 0, 0.55),
-        rgba(0, 0, 0, 0.55)
-    ), url(https://images.unsplash.com/photo-1505075106905-fb052892c116?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);    
-    background-repeat: no-repeat;    
-    background-attachment: fixed;    
-    background-size: cover;
-}
-
 header {
     margin: 2em;
     text-align: center;
@@ -31,6 +20,7 @@ header h1, p {
 }
 
 body {
+    position: absolute;
     margin: 0;
     display: flex;
     align-items: center;
@@ -38,6 +28,15 @@ body {
     font-family: 'Poppins', sans-serif;    
     font-weight: 200;
     color: white;  
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.55),
+        rgba(0, 0, 0, 0.55)
+    ), url(https://images.unsplash.com/photo-1505075106905-fb052892c116?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);    
+    background-repeat: no-repeat;    
+    background-attachment: fixed;    
+    background-size: cover;
+    background-position: absolute;
 }
 
 .form-container {
@@ -100,6 +99,10 @@ input {
 
     header {
         font-size: 1.5vw;
+    }
+
+    body {
+        position: relative;
     }
 
     .form-container {
