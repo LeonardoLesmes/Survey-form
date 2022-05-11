@@ -36,7 +36,8 @@ body {
     background-repeat: no-repeat;    
     background-attachment: fixed;    
     background-size: cover;
-    background-position: absolute;
+    background-position: center;
+    background-clip: border-box;
 }
 
 .form-container {
