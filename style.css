@@ -36,7 +36,10 @@ body {
     background-attachment: fixed;    
     background-size: cover;
     background-clip: content-box;
+    overflow: scroll;
 }
+
+
 
 .form-container {
     width: 100%;
